@@ -1,0 +1,55 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  padding: 15px 50px;
+  z-index: 1000; /* make sure it's above other elements */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  background:black;
+  height: 80px;
+  
+}
+
+.logo {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  /* margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate; */
+  margin: 0;
+  padding: 0;
+
+  gap: 15px;
+  color: white;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+  cursor: pointer;
+}
+ul li:hover {
+  color: wheat;
+}
+
+/* .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; height: 80px; } */
+.nav-body .navbar {
+  position: fixed;
+  padding-right: 40px;
+  
+}
+
+
+

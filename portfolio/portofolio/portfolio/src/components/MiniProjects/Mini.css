@@ -1,0 +1,49 @@
+.projects {
+  text-align: center;
+  padding: 10px;
+  background: #f8f8f8;
+  
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+}
+.projects h1{
+ color: black;
+}
+@media (max-width:576px) {
+  .project-card{
+    height: 300px;
+  }
+  
+}
+@media (max-width:768px) {
+  .project-card{
+    height: 300px;
+  }
+  
+
+}

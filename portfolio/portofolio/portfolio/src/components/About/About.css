@@ -1,0 +1,15 @@
+.bg {
+  background: red;
+}
+.ul {
+  color: rgba(13, 145, 182, 0.801);
+}
+.Evan {
+  padding: 10px;
+  text-decoration: none;
+  background: rgb(247, 245, 245);
+  border-radius: 5px;
+}
+.Evan:hover {
+  background: rgb(153, 151, 151);
+}

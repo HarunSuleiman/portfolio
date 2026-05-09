@@ -1,0 +1,127 @@
+.contact {
+  background: linear-gradient(180deg,#f8f8f8, rgb(156, 230, 247));
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.2em;
+}
+
+.contact h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card:hover {
+  background: #47b7f3;
+  color: #fff;
+  transform: translateY(-5px) scale(1.05);
+}
+
+.contact-card .icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact-card span {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.contact-card p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+}
+
+.phone_no h2 {
+  margin-bottom: 10px;
+}
+
+.phone_no h3 {
+  margin: 5px 0;
+  font-weight: normal;
+}
+.contact a {
+  color: rgb(35, 69, 181);
+}
+
+
+/*Form*/
+form {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #1e293b;
+  background: linear-gradient(180deg,#e2dada, rgb(115, 174, 187));
+  /*allign center*/
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  background: #000000;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #38bdf8;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,52 @@
+.testimony-section {
+  background: #f9fafb;
+ 
+}
+
+.testimony-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.testimony-card {
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  /* background: #fff; */
+  /* background: black; */
+  /* background: linear-gradient(180deg, rgb(157, 210, 198), rgb(115, 139, 188)); */
+  
+  border-style: none;
+  
+  
+  
+}
+
+.testimony-card:hover {
+  transform: translateY(-6px);
+}
+
+.testimony-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+  color:black;
+}
+
+.testimony-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .testimony-title {
+    font-size: 1.6rem;
+  }
+
+  .testimony-text {
+    font-size: 1rem;
+  }
+}

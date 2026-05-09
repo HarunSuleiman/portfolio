@@ -1,0 +1,42 @@
+.projects {
+  background: linear-gradient(to right, rgb(155, 86, 86), rgb(152, 161, 49));
+  background: #f8f8f8;
+}
+
+.project-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  width: 350px;
+
+}
+.project-card:hover {
+  transform: scale(1.09);
+  transition: transform 0.2s;
+}
+.projects h1 {
+  color: black;
+}
+@media (max-width: 576px) {
+  .project-card {
+    width: 350px;
+    height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .project-card {
+    width: 350px;
+    height: 250px;
+  }
+}
+.projects img {
+  width: 300px;
+  height: 130px;
+}
