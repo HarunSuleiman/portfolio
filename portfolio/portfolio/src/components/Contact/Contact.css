@@ -125,3 +125,68 @@ form button:hover {
   background: #0ea5e9;
   transform: translateY(-2px);
 }
+
+
+
+
+
+
+.thank-you-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  padding: 20px;
+}
+
+.thank-you-card {
+  background: #1e293b;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  color: white;
+  animation: fadeIn 0.5s ease;
+}
+
+.thank-you-card h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.thank-you-card p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.thank-you-card button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.thank-you-card button:hover {
+  background: #0ea5e9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

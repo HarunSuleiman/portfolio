@@ -11,21 +11,19 @@ import {
 } from "react-icons/fa";
 import "../Contact/Contact.css";
 export default function Contact() {
+  //Form state
 
-//Form state
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
+  // STATUS MESSAGE
+  const [status, setStatus] = useState("");
 
-   const [formData, setFormData] = useState({
-     name: "",
-     email: "",
-     subject: "",
-     message: "",
-   });
-
-   // STATUS MESSAGE
-   const [status, setStatus] = useState("");
-
-   // HANDLE INPUT CHANGE
+  // HANDLE INPUT CHANGE
    const handleChange = (e) => {
      setFormData({
        ...formData,
@@ -33,31 +31,48 @@ export default function Contact() {
      });
    };
 
-   // HANDLE FORM SUBMIT
-   const handleSubmit = async (e) => {
-     e.preventDefault();
+  // HANDLE FORM SUBMIT
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-     try {
-       const response = await axios.post(
-         "http://localhost:5000/contact",
-         formData,
-       );
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/contact",
+        formData,
+      );
 
-       setStatus(response.data.message);
+      setStatus("success");
 
-       // CLEAR FORM
-       setFormData({
-         name: "",
-         email: "",
-         subject: "",
-         message: "",
-       });
-     } catch (error) {
-       console.log(error);
+      // CLEAR FORM
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.log(error);
 
-       setStatus("Failed to send message");
-     }
-   };
+      setStatus("Failed to send message");
+    }
+  };
+
+  if (status === "success") {
+    return (
+      <section className="thank-you-page">
+        <div className="thank-you-card">
+          <h1>🎉 Thank You!</h1>
+
+          <p>
+            Your message has been sent successfully.
+            <br />I will contact you soon.
+          </p>
+
+          <button onClick={() => setStatus("")}>Send Another Message</button>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="contact">
@@ -100,7 +115,6 @@ export default function Contact() {
         ></textarea>
 
         <button type="submit">Send Message</button>
-        
       </form>
 
       <div className="contact-grid">
