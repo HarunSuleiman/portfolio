@@ -21,7 +21,8 @@ export default function About() {
             foundation in
             <strong>
               {" "}
-              HTML, CSS, Media Query, Bootstrap, JavaScript, and jQuery
+              HTML, CSS, Media Query, Bootstrap, JavaScript,TypeScript, and
+              jQuery
             </strong>
             enables me to design clean, high-performance interfaces that deliver
             exceptional user experiences.

@@ -5,7 +5,7 @@ import MyPhoto from "../../components/Hero/MyPhoto.jpg";
 export default function Hero() {
   const [displayedText, setDisplayedText] = useState("");
   const fullText =
-    "I am Full-Stack Web-Site Developer and UI/UX Designer .Specializing in creating dynamic and responsive web applications using React.js and modern web technologies.On the Back-End, I work with Node.js, Express.js, and MySQL to build robust, secure, and scalable server-side applications that integrate seamlessly with modern front-end frameworks.I love solving problems and continuously learning new tools.";
+    "I am Full-Stack Web-Site Developer and UI/UX Designer .Specializing in creating dynamic and responsive web applications using React.js,javascript,TypeScript, and modern web technologies.On the Back-End, I work with Node.js, Express.js, and MySQL to build robust, secure, and scalable server-side applications that integrate seamlessly with modern front-end frameworks.I love solving problems and continuously learning new tools.";
 
   useEffect(() => {
     let index = 0;
